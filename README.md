@@ -69,11 +69,15 @@ cd LinkStash
 
 ```
 
-2️⃣ Setup Backend
+## 🚀 Setup
+
+### 2️⃣ Setup Backend
+
+```bash
 cd backend
 npm install
 
-Create a .env file inside backend/
+Create a .env file inside backend/ and add:
 
 MONGO_URI=mongodb+srv://youruser:yourpassword@cluster0.xxxxx.mongodb.net/linkstash?retryWrites=true&w=majority
 JWT_SECRET=your_super_secret_key_here
@@ -91,7 +95,7 @@ MongoDB connected
 cd ../frontend
 npm install
 
-Create a .env file inside frontend/
+Create a .env file inside frontend/ and add:
 
 VITE_API_URL=http://localhost:3000/api
 
@@ -99,18 +103,16 @@ Run the frontend:
 
 npm run dev
 
-Open:
+Open in your browser:
 
 http://localhost:5173
-
-
 👨‍💻 Author
 
 Muhammad Danyal
 
 Built because existing bookmark managers felt too complicated and bloated.
 
-
 📄 License
 
 MIT License — free to use, modify, and distribute.
+```
