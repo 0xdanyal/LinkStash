@@ -1,0 +1,44 @@
+/* ── REGISTER PAGE ── */
+/* Inherits auth-page, auth-card, auth-form etc. from login.css */
+/* Add register-specific overrides below */
+
+.register-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: var(--color-primary-light);
+  color: var(--color-primary);
+  font-size: 12px;
+  font-weight: 600;
+  padding: 5px 12px;
+  border-radius: var(--radius-full);
+  margin: 0 auto 20px;
+  letter-spacing: 0.3px;
+}
+
+.register-badge::before {
+  content: '✦';
+  font-size: 10px;
+}
+
+.password-hint {
+  font-size: 12px;
+  color: var(--color-text-3);
+  margin-top: 5px;
+  padding-left: 2px;
+}
+
+.terms-note {
+  font-size: 12px;
+  color: var(--color-text-4);
+  text-align: center;
+  margin-top: 12px;
+  line-height: 1.5;
+}
+
+/* ── RESPONSIVE ── */
+@media (max-width: 480px) {
+  .auth-card {
+    padding: 28px 20px;
+  }
+}
